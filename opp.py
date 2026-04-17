@@ -76,4 +76,26 @@ btn_col1, btn_col2 = st.columns(2)
 
 with btn_col1:
     contact_link = f'mailto:pushkar2256@gmail.com?subject=Art%20Order:%20{level}'
-    st.markdown(f'<a href="{contact_link}" target="_blank" style="text-decoration: none;"><div style="background-color: #ffcc00
+    # Make sure contact_link is defined above this line
+contact_link = f'mailto:pushkar2256@gmail.com?subject=Art%20Order:%20{level}'
+
+# Corrected Markdown with the fixed closing brace and style
+st.markdown(
+    f'''
+    <a href="{contact_link}" target="_blank" style="text-decoration: none;">
+        <div style="
+            background-color: #ffcc00; 
+            color: black; 
+            padding: 15px; 
+            text-align: center; 
+            border-radius: 8px; 
+            font-weight: bold;
+            font-family: sans-serif;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        ">
+            START YOUR COMMISSION NOW
+        </div>
+    </a>
+    ''', 
+    unsafe_allow_html=True
+)
