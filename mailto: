@@ -1,0 +1,1 @@
+st.markdown('<a href="mailto:pushkar2256@gmail.com?subject=New%20Art%20Commission%20Inquiry" style="color: #ffcc00; text-decoration: none; font-weight: bold;">Click Here to Email Pushkar Directly</a>', unsafe_allow_html=True)
